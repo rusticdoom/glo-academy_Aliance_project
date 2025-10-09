@@ -24,12 +24,20 @@ body {
   display: flex;
   align-items: center;
   color: white;
-  position: relative;
+  position: fixed;
+  z-index: 2;
   border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+  transition: background-color 0.2s;
+}
+
+.navbar-light {
+  background: #fafbfc;
+  color: #292d33;
 }
 
 .header {
   min-height: 100vh;
+  padding-top: 94px;
 }
 
 .header-image {
@@ -55,6 +63,14 @@ body {
   padding: 25px 50px;
   border-right: 1px solid rgba(235, 235, 240, 0.2);
   height: 100%;
+}
+
+.logo-light {
+  display: inline;
+}
+
+.logo-main {
+  display: none;
 }
 
 .header-nav {

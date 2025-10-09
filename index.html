@@ -12,44 +12,50 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="/js/main.js" defer></script>
+    <script src="/js/navbar.js" defer></script>
     <title>Aliance Production</title>
   </head>
   <body>
-    <header class="header header-image">
-      <nav class="navbar">
-        <a href="./" class="header-logo">
-          <img
-            class="logo-light"
-            src="./images/logo/aliance_logo_light.svg"
-            alt="logo-light"
-          />
+    <nav class="navbar">
+      <a href="./" class="header-logo">
+        <img
+          class="logo-light"
+          src="./images/logo/aliance_logo_light.svg"
+          alt="logo-light"
+        />
+        <img
+          class="logo-main"
+          src="./images/logo/aliance_logo_main.svg"
+          alt="logo-main"
+        />
+      </a>
+      <ul class="header-nav">
+        <li class="header-nav-item">
+          <a href="" class="header-nav-link">О компании</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="" class="header-nav-link">Контрактное производство</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="" class="header-nav-link">Собственные торговые марки</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="" class="header-nav-link">Новости</a>
+        </li>
+        <li class="header-nav-item">
+          <a href="" class="header-nav-link">Контакты</a>
+        </li>
+      </ul>
+      <div class="header-phone">
+        <img src="/images/icons/phone.svg" alt="phone" />
+        <a href="tel:+74996861014" class="header-phone-link"
+          >+7 (499) 686-10-14
         </a>
-        <ul class="header-nav">
-          <li class="header-nav-item">
-            <a href="" class="header-nav-link">О компании</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="" class="header-nav-link">Контрактное производство</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="" class="header-nav-link">Собственные торговые марки</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="" class="header-nav-link">Новости</a>
-          </li>
-          <li class="header-nav-item">
-            <a href="" class="header-nav-link">Контакты</a>
-          </li>
-        </ul>
-        <div class="header-phone">
-          <img src="/images/icons/phone.svg" alt="phone" />
-          <a href="tel:+74996861014" class="header-phone-link"
-            >+7 (499) 686-10-14
-          </a>
-        </div>
-        <button class="navbar-button button">Получить консультацию</button>
-      </nav>
-      <!-- /.navbar -->
+      </div>
+      <button class="navbar-button button">Получить консультацию</button>
+    </nav>
+    <!-- /.navbar -->
+    <header class="header header-image">
       <div class="container">
         <div class="header-content">
           <div class="separater"></div>
