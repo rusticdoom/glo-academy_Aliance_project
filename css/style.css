@@ -65,14 +65,6 @@ body {
   height: 100%;
 }
 
-.logo-light {
-  display: inline;
-}
-
-.logo-main {
-  display: none;
-}
-
 .header-nav {
   display: flex;
   flex-basis: 100%;
