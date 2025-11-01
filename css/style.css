@@ -53,6 +53,10 @@ body {
   height: 2.75rem;
 }
 
+.aliance_logo-main {
+  display: none;
+}
+
 .header {
   min-height: 100vh;
   padding-top: 5.875rem;

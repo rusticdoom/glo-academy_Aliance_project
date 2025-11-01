@@ -1,17 +1,22 @@
 const navbar = () => {
   const navbar = document.querySelector(".navbar");
-  const logo = document.querySelector(".aliance_logo use");
+  const logoLight = document.querySelector(".aliance_logo-light");
+  const logoMain = document.querySelector(".aliance_logo-main");
   const mMenuToggle = document.querySelector(".mobile-menu-toggle");
   const menu = document.querySelector(".mobile-menu");
 
   const lightModeOn = (event) => {
     navbar.classList.add("navbar-light");
-    logo.href.baseVal = "images/sprite.svg#aliance_logo_main";
+    // logo.href.baseVal = "images/sprite.svg#aliance_logo_main";
+    logoLight.style.display = "none";
+    logoMain.style.display = "block";
   };
 
   const lightModeOff = (event) => {
     navbar.classList.remove("navbar-light");
-    logo.href.baseVal = "images/sprite.svg#aliance_logo_light";
+    // logo.href.baseVal = "images/sprite.svg#aliance_logo_light";
+    logoLight.style.display = "block";
+    logoMain.style.display = "none";
   };
 
   const openMenu = (event) => {
