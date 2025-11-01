@@ -429,6 +429,7 @@ body {
     padding: 0;
   }
   .mobile-menu-nav-item {
+    margin-top: 1rem;
     margin-bottom: 2rem;
   }
   .mobile-menu-link {
