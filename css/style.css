@@ -246,12 +246,12 @@ body {
   display: flex;
   list-style: none;
   padding: 0;
-  gap: 1.875rem;
+  /* gap: 1.875rem; it conflicted swiper plugin*/
 }
 
-.steps-item {
-  max-width: 20.625rem;
-}
+/* .steps-item { */
+/* max-width: 20.625rem; it conflicted swiper plugin*/
+/* } */
 
 .steps-num {
   display: flex;
@@ -274,6 +274,7 @@ body {
 .steps-title {
   margin-top: 1.875rem;
   margin-bottom: 0.625rem;
+  padding-right: 0.7rem;
   font-family: "Noto Sans", sans-serif;
   font-size: 1.75rem;
   font-weight: 400;
@@ -284,6 +285,7 @@ body {
 .steps-text {
   margin-top: 1.875rem;
   margin-bottom: 1.25rem;
+  padding-right: 0.7rem;
   font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   font-style: normal;
@@ -309,6 +311,23 @@ body {
   height: 1px;
   margin-right: 0.75rem;
   background: #5c8ee5;
+}
+
+.steps-buttons {
+  display: none;
+  justify-content: flex-end;
+  height: 40px;
+}
+
+.steps-button-prev,
+.steps-button-next {
+  background: #5c8ee6;
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 @media (max-width: 1700px) {
@@ -354,6 +373,12 @@ body {
   .navbar-button {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .steps-buttons {
+    display: flex;
   }
 }
 
