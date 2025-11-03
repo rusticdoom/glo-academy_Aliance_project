@@ -395,9 +395,29 @@ body {
 }
 
 .brand-card {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr;
+  grid-column-gap: 3.125rem;
+  grid-template-areas:
+    "logo title title"
+    "logo text text";
+  padding: 3.125rem;
   width: 45rem;
+}
+
+.card-brand_image {
+  width: 100%;
+  grid-area: logo;
+  fill: #828a99;
+}
+
+.brand-card h3 {
+  grid-area: title;
+}
+
+.brand-card p {
+  grid-area: text;
 }
 
 .card:hover .card-title {
@@ -406,6 +426,10 @@ body {
 
 .card:hover {
   border-color: #5c8ee6;
+}
+
+.card:hover .card-brand_image {
+  fill: #5c8ee6;
 }
 
 .card-content {
@@ -421,7 +445,7 @@ body {
   line-height: 140%;
   color: #292d33;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   transition: color 0.5s;
 }
 
@@ -443,11 +467,6 @@ body {
   left: 0;
   right: 0; this approach does not work well at some resolutions*/
   align-self: flex-end;
-}
-
-.card-brand_image {
-  height: 8.75rem;
-  align-self: center;
 }
 
 @media (max-width: 1700px) {
@@ -668,5 +687,13 @@ body {
 @media (max-width: 576px) {
   .container {
     max-width: 90%;
+  }
+  .brand-card {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-column-gap: 1rem;
+    grid-template-areas:
+      "logo title"
+      "text text";
   }
 }
