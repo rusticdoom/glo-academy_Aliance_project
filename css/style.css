@@ -93,8 +93,16 @@ body {
   display: flex;
   flex-basis: 100%;
   list-style: none;
+  height: 100%;
+  align-items: center;
   padding-left: 3.125rem;
   margin: 0;
+}
+
+.header-nav-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .header-nav-item:not(:last-child) {
@@ -102,9 +110,39 @@ body {
 }
 
 .header-nav-link {
+  display: flex;
+  align-items: center;
+  height: 100%;
   text-decoration: none;
   font-size: 1rem;
   color: inherit;
+  /* border-bottom: 2px solid rgba(41, 45, 51, 0); hover approach example*/
+  position: relative; /* alternative hover approach*/
+}
+
+/* .header-nav-link:hover {
+  border-bottom: 2px solid #5c8ee5;
+} hover aproach example*/
+
+.header-nav-link:after {
+  /* alternative hover approach*/
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  background-color: #5c8ee6;
+  transition: width 0.2s;
+  right: 0;
+  left: auto;
+}
+
+.header-nav-link:hover::after {
+  /* alternative hover approach*/
+  border-bottom: 2px solid #5c8ee5;
+  width: 100%;
+  right: auto;
+  left: 0;
 }
 
 .header-phone {
