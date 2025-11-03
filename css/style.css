@@ -48,7 +48,7 @@ body {
   fill: #5c8ee6;
 }
 
-.logo-svg {
+.aliance_logo-main .aliance_logo-main {
   width: 9rem;
   height: 2.75rem;
 }
@@ -484,6 +484,9 @@ body {
   .slider-buttons {
     display: flex;
   }
+  .navbar {
+    height: 5.8rem;
+  }
 }
 
 @media (max-width: 1240px) {
@@ -522,6 +525,15 @@ body {
     flex-grow: 1;
     justify-content: center;
   }
+  .aliance_logo-light .aliance_logo-main {
+    max-width: 10rem;
+  }
+
+  .navbar-button {
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+  }
+
   .mobile-menu-toggle {
     width: 80px;
     height: 100%;
@@ -641,9 +653,11 @@ body {
   .header-title {
     font-size: 4rem;
   }
-
+  .header-text {
+    font-size: 1rem;
+  }
   .header-content {
-    padding-top: 3rem;
+    padding-top: 4rem;
   }
 
   /* .card {
@@ -654,12 +668,5 @@ body {
 @media (max-width: 576px) {
   .container {
     max-width: 90%;
-  }
-  .header-title {
-    font-size: 2rem;
-  }
-
-  .header-content {
-    padding-top: 3rem;
   }
 }
