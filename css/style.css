@@ -330,6 +330,57 @@ body {
   cursor: pointer;
 }
 
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  /* flex-basis: 33%; this approach does not work well at some resolutions */
+  border: 1px solid #ebebf0;
+  /* position: relative; this approach does not work well at some resolutions */
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.card-content {
+  width: 29rem;
+  padding: 2.5rem 3.125rem;
+}
+
+.card-title {
+  font-family: "Noto Sans";
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  color: #292d33;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-family: "Noto Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  color: #828a99;
+  /* margin-bottom: 19rem; this approach does not work well at some resolutions */
+}
+
+.card-image {
+  height: 20rem;
+  width: 25rem;
+  /* position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; this approach does not work well at some resolutions*/
+  align-self: flex-end;
+}
+
 @media (max-width: 1700px) {
   html {
     font-size: 14px;
@@ -386,6 +437,9 @@ body {
   .slider-buttons {
     display: flex;
   }
+  /* .card {
+    flex-basis: 50%;
+  } this approach does not work well at some resolutions*/
 }
 
 @media (max-width: 928px) {
@@ -525,6 +579,10 @@ body {
   .header-content {
     padding-top: 3rem;
   }
+
+  /* .card {
+    flex-basis: 100%;
+  } this approach does not work well at some resolutions*/
 }
 
 @media (max-width: 576px) {
