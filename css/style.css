@@ -383,11 +383,21 @@ body {
   /* flex-basis: 33%; this approach does not work well at some resolutions */
   border: 1px solid #ebebf0;
   /* position: relative; this approach does not work well at some resolutions */
+  text-decoration: none;
+  transition: border 0.5s;
+}
+
+.product-card {
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  text-decoration: none;
-  transition: border 0.5s;
+  width: 30rem;
+}
+
+.brand-card {
+  display: flex;
+  flex-direction: row;
+  width: 45rem;
 }
 
 .card:hover .card-title {
@@ -399,7 +409,7 @@ body {
 }
 
 .card-content {
-  width: 29rem;
+  /* width: 29rem; */
   padding: 2.5rem 3.125rem;
 }
 
@@ -425,7 +435,7 @@ body {
   /* margin-bottom: 19rem; this approach does not work well at some resolutions */
 }
 
-.card-image {
+.card-product_image {
   height: 20rem;
   width: 25rem;
   /* position: absolute;
@@ -433,6 +443,11 @@ body {
   left: 0;
   right: 0; this approach does not work well at some resolutions*/
   align-self: flex-end;
+}
+
+.card-brand_image {
+  height: 8.75rem;
+  align-self: center;
 }
 
 @media (max-width: 1700px) {
@@ -465,6 +480,12 @@ body {
   }
 }
 
+@media (max-width: 1200px) {
+  .slider-buttons {
+    display: flex;
+  }
+}
+
 @media (max-width: 1240px) {
   .container {
     max-width: 65rem;
@@ -485,15 +506,6 @@ body {
   .steps-buttons {
     display: flex;
   }
-}
-
-@media (max-width: 1200px) {
-  .slider-buttons {
-    display: flex;
-  }
-  /* .card {
-    flex-basis: 50%;
-  } this approach does not work well at some resolutions*/
 }
 
 @media (max-width: 928px) {
