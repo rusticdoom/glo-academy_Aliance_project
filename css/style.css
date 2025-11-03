@@ -386,6 +386,16 @@ body {
   display: flex;
   flex-direction: column;
   align-content: space-between;
+  text-decoration: none;
+  transition: border 0.5s;
+}
+
+.card:hover .card-title {
+  color: #5c8ee6;
+}
+
+.card:hover {
+  border-color: #5c8ee6;
 }
 
 .card-content {
@@ -402,6 +412,7 @@ body {
   color: #292d33;
   margin-top: 0;
   margin-bottom: 10px;
+  transition: color 0.5s;
 }
 
 .card-text {
