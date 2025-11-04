@@ -547,6 +547,19 @@ body {
   padding: 1rem;
 }
 
+.client-logo-main {
+  display: none;
+}
+
+.clients-logo-item:hover {
+  .client-logo-main {
+    display: block;
+  }
+  .client-logo-faded {
+    display: none;
+  }
+}
+
 .client-logo {
   width: 4.375rem;
   height: 4.375rem;
