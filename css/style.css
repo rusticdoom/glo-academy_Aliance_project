@@ -545,19 +545,12 @@ body {
   flex-basis: 33%;
   border: 1px solid #ebebf0;
   padding: 1rem;
-}
-
-.client-logo-main {
-  display: none;
+  filter: grayscale(100%);
 }
 
 .clients-logo-item:hover {
-  .client-logo-main {
-    display: block;
-  }
-  .client-logo-faded {
-    display: none;
-  }
+  filter: grayscale(0%);
+  transition: filter 0.5s;
 }
 
 .client-logo {
