@@ -238,13 +238,13 @@ body {
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
 
-.slider-buttons {
+.header-features-buttons {
   display: none;
   height: 44px;
 }
 
-.slider-button-prev,
-.slider-button-next {
+.header-features-button-prev,
+.header-features-button-next {
   height: 100%;
   flex-basis: 50%;
   border: 1px solid rgba(235, 235, 240, 0.2);
@@ -356,17 +356,20 @@ body {
   transition: width 0.2s;
 }
 
-.steps-buttons {
-  display: none;
+.main_swiper-button-wrapper {
   justify-content: flex-end;
-  height: 40px;
+  height: 60px;
 }
 
-.steps-button-prev,
-.steps-button-next {
+.steps-buttons {
+  display: none;
+}
+
+.main_swiper-button-prev,
+.main_swiper-button-next {
   background: #5c8ee6;
   height: 100%;
-  width: 60px;
+  width: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -558,6 +561,69 @@ body {
   height: 4.375rem;
 }
 
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.625rem;
+  position: relative;
+  min-height: 25rem;
+  text-decoration: none;
+  padding: 3.125rem;
+}
+
+.blog-card-title {
+  font-family: "Noto Sans";
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: #fff;
+  margin: 0;
+}
+
+.blog-card-text {
+  font-family: "Noto Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: #fff;
+  margin: 0;
+}
+
+.blog-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 45, 51, 0.6);
+  z-index: -1;
+}
+
+.blog-card-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.blog-slider-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 1.875rem;
+  justify-content: space-between;
+}
+
+.blog-buttons {
+  display: flex;
+}
+
 @media (max-width: 1700px) {
   html {
     font-size: 14px;
@@ -611,10 +677,20 @@ body {
   .steps-buttons {
     display: flex;
   }
+
+  .main_swiper-button-wrapper {
+    justify-content: flex-end;
+    height: 40px;
+  }
+
+  .main_swiper-button-prev,
+  .main_swiper-button-next {
+    width: 60px;
+  }
 }
 
 @media (max-width: 1200px) {
-  .slider-buttons {
+  .header-features-buttons {
     display: flex;
   }
   .navbar {

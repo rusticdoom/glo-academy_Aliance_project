@@ -7,8 +7,8 @@ const swiperFeatures = new Swiper(".header-features-slider", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".slider-button-next",
-    prevEl: ".slider-button-prev",
+    nextEl: ".header-features-button-next",
+    prevEl: ".header-features-button-prev",
   },
 
   breakpoints: {
@@ -50,6 +50,26 @@ const swiperSteps = new Swiper(".steps-slider", {
     },
     1300: {
       slidesPerView: 4,
+    },
+  },
+});
+
+const swiperBlog = new Swiper(".blog-slider", {
+  // Optional parameters
+  direction: "horizontal",
+  speed: 400,
+  slidesPerView: 1,
+  spaceBetween: 30,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".blog-button-next",
+    prevEl: ".blog-button-prev",
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
     },
   },
 });
