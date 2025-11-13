@@ -943,6 +943,25 @@ body {
   .cta-image {
     max-width: 35rem;
   }
+  .footer-top {
+    flex-direction: column;
+    gap: 1.3125rem;
+    align-items: flex-start;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1.3125rem;
+    align-items: flex-start;
+  }
+  .footer-menu-column-list {
+    columns: 1;
+  }
+  .footer-menu-wrapper:last-child {
+    margin-left: 0;
+    .footer-menu-list {
+      padding-left: 0;
+    }
+  }
 }
 
 @media (max-width: 1300px) {
