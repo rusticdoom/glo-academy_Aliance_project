@@ -754,6 +754,145 @@ body {
   color: #828a99;
 }
 
+.footer-top {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aliance_logo-footer {
+  width: 12.5rem;
+  height: 3.9286rem;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-style: normal;
+  color: #292d33;
+  gap: 0.625rem;
+}
+
+.footer-info-address,
+.footer-info-email {
+  font-style: inherit;
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.footer-phone {
+  font-family: "Noto Sans";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+  color: #292d33;
+}
+
+.footer-separator {
+  color: #ebebf0;
+  opacity: 0.3;
+}
+
+.footer-bottom {
+  display: flex;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+
+.footer-menu-wrapper:last-child {
+  margin-left: 5rem;
+}
+
+.footer-menu-title {
+  margin-top: 0;
+  margin-bottom: 1.875rem;
+  font-family: "Noto Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  color: #292d33;
+}
+
+.footer-menu-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: none;
+}
+
+.footer-menu-column-list {
+  columns: 20rem auto;
+  min-width: 50rem;
+}
+
+.footer-menu-link {
+  display: block;
+  margin-bottom: 0.9375rem;
+  text-decoration: none;
+  font-family: "Noto Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: #828a99;
+}
+
+.footer-menu-link-bold {
+  margin-bottom: 1.875rem;
+  font-family: "Noto Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  color: #292d33;
+}
+
+.footer-wrapper,
+.footer-legal {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.footer-wrapper,
+.footer-legal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4.375rem;
+}
+
+.footer-copyright,
+.footer-policy {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  font-family: "Noto Sans";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: #828a99;
+}
+
+.footer-author .made_in {
+  text-align: right;
+  font-family: "Noto Sans";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: #828a99;
+}
+
 @media (max-width: 1700px) {
   html {
     font-size: 14px;
