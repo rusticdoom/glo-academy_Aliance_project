@@ -7,7 +7,7 @@ html {
 }
 
 @font-face {
-  font-family: "Bebas Neue Book";
+  font-family: "Bebas Neue Book", sans-serif;
   src: url("./fonts/BebasNeueBook.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -441,7 +441,7 @@ body {
 }
 
 .card-title {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.75rem;
   font-style: normal;
   font-weight: 400;
@@ -453,7 +453,7 @@ body {
 }
 
 .card-text {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -500,7 +500,7 @@ body {
 }
 
 .founder-text {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -528,7 +528,7 @@ body {
   align-items: center;
   gap: 1.25rem;
   color: #292d33;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -573,7 +573,7 @@ body {
 }
 
 .blog-card-title {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.75rem;
   font-style: normal;
   font-weight: 400;
@@ -583,7 +583,7 @@ body {
 }
 
 .blog-card-text {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -659,7 +659,7 @@ body {
 }
 
 .cta-form-text {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -671,16 +671,21 @@ body {
   background-color: #f0f2f5;
 }
 
+.input-group-wrapper {
+  display: flex;
+  gap: 1.875rem;
+}
+
+.input-group-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
 .input-group {
   position: relative;
   height: 4.125rem;
   flex-grow: 1;
   background-color: #f0f2f5;
-}
-
-.input-group-wrapper {
-  display: flex;
-  gap: 1.875rem;
 }
 
 .input {
@@ -691,7 +696,7 @@ body {
   left: 0;
   padding: 1.25rem 1.875rem;
   border: 1px solid #e4e4eb;
-  background-color: transparent;
+  background-color: inherit;
 }
 
 .input-group-label {
@@ -699,7 +704,7 @@ body {
   cursor: text;
   top: 1.2rem;
   left: 1.975rem;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -746,7 +751,7 @@ body {
 .cta-form-notification-text {
   margin: 0;
   max-width: 23.75rem;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 400;
@@ -784,7 +789,7 @@ body {
 }
 
 .footer-phone {
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 2rem;
   font-style: normal;
   font-weight: 600;
@@ -816,7 +821,7 @@ body {
 .footer-menu-title {
   margin-top: 0;
   margin-bottom: 1.875rem;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
@@ -839,7 +844,7 @@ body {
   display: block;
   margin-bottom: 0.9375rem;
   text-decoration: none;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -849,7 +854,7 @@ body {
 
 .footer-menu-link-bold {
   margin-bottom: 1.875rem;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   font-style: normal;
   font-weight: 600;
@@ -875,7 +880,7 @@ body {
 .footer-policy {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 400;
@@ -885,7 +890,7 @@ body {
 
 .footer-author .made_in {
   text-align: right;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-size: 0.75rem;
   font-style: normal;
   font-weight: 400;
@@ -962,6 +967,112 @@ body {
       padding-left: 0;
     }
   }
+}
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 45, 51, 0.5);
+  z-index: 10;
+  display: flex;
+}
+
+.modal.is-open {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal.is-open .modal-dialog {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.modal-dialog {
+  margin: auto;
+  max-width: 28.75rem;
+  padding: 2.5rem 3.125rem;
+  background-color: #fafbfc;
+  position: relative;
+  transform: translateY(-10%);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.modal-close {
+  display: block;
+  position: absolute;
+  top: 2.5rem;
+  right: 3.125rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ebebf0;
+}
+
+.modal-title {
+  font-family: "Bebas Neue Book", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.1875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  color: #292d33;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+.modal-text {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: #828a99;
+  margin-bottom: 1.875rem;
+}
+
+.modal-input-group {
+  background-color: #fafbfc;
+}
+
+.modal-input-label {
+  background-color: #fafbfc !important;
+}
+
+.modal-form-footer {
+  margin-top: 1.875rem;
+}
+
+.modal-form-button {
+  display: block;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.modal-form-notification {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.625rem;
+}
+
+.modal-form-notification-text {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: #828a99;
+  margin-top: 3px;
 }
 
 @media (max-width: 1300px) {
@@ -1142,6 +1253,7 @@ body {
   .input-group-wrapper {
     flex-direction: column;
   }
+
   .cta-form-footer {
     flex-direction: column;
     align-items: start;
