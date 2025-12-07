@@ -631,6 +631,7 @@ body {
 .section-cta {
   display: flex;
   flex-direction: row;
+  margin-top: 100px;
 }
 
 .cta-image-wrapper {
